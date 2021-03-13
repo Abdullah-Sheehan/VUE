@@ -1,0 +1,52 @@
+#vue-app {
+  height: 200vh;
+}
+h1{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 50px;
+}
+#img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 600px;
+  display: block;
+  background: url(img/bag.png) no-repeat;
+}
+#img.burst{
+    background: url(img/bag-burst.png) no-repeat;
+}
+.main {
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid black;
+  width: 500px;
+  height: 20px;
+}
+.progress {
+  height: 20px;
+  background: red;
+  transition: 0.5s;
+}
+.punch {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  display: block;
+  width: 100px;
+  height: 40px;
+  background: #f13961;
+  border: none;
+  outline-width: 0px;
+  cursor: pointer;
+  transition: 0.5s;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.punch:hover{
+    box-shadow: 6px 6px 2px 0px #c57a7a;
+}
+.punch:focus{
+    border: none;
+    outline-width: 0px;
+}

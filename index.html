@@ -1,0 +1,26 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VueJS tutorial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="vue-app">
+        <h1>PUNCH GAME</h1>
+        <div id="img" v-bind:class="{burst:ended}"></div>
+        <div class="main">
+            <div :style="{width: width + '%'}" class="progress"></div>
+        </div>
+        <button @click="decHealth()" class="punch" v-show="!isHidden">Punch</button>
+        <button  @click="res()" class="punch" v-on:click="isHidden = !isHidden" v-show="isHidden">{{sr}}</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
